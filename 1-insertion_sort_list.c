@@ -8,14 +8,14 @@
 
 void insertion_sort_list(listint_t **list)
 {
-	listint_t *head = *list;
-	listint_t *ref = head->next;
-	listint_t *index;
+	listint_t *head, *ref, *index;
 
 	if (list == NULL || *list == NULL)
 	{
 		return;
 	}
+	head = *list;
+	ref = head->next;
 	while (ref != NULL)
 	{
 		index = ref->prev;
